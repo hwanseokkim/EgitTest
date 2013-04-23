@@ -5,6 +5,9 @@ from test.views import *
 # from django.contrib import admin
 # admin.autodiscover()
 
+
+#egittest
+
 urlpatterns = patterns('',
     url(r'^$', main_page),
     url(r'^user/(.+)/$', user_page),
