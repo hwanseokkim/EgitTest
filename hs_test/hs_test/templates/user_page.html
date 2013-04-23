@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>장고 북마크 - 사용자:{{ username }}</title>
+	</head>
+	<body>
+		<h1>{{ username }}의 북마크입니다.</h1>
+		{% if hs_test %}
+			<ul>
+				{% for test in hs_test %}
+					<li><a href="{{ test.link.url }}">
+						{{ test.title }}</a></li>
+				{% endfor %}
+			</ul>
+		{% else %}
+			<p>북마크가 없습니다.</p>
+		{% endif %}
+	</body>
+</html>
